@@ -11,10 +11,10 @@ It will then go through all your trophies.
 # Credits
 TropHax by [SilicaServer](https://discord.gg/j4eGHhF)
 
-@SilicaAndPina - Lead Project Manager and Recon
-@Pocxki - Idea/Trophy merchant/Lead Tester
-@dots-tb - Lead Developer, Slave & Silica Victim
-@zecoxao - Former Lead Developer, Free man
+@SilicaAndPina - Lead Project Manager and Recon                    
+@Pocxki - Idea/Trophy merchant/Lead Tester              
+@dots-tb - Lead Developer, Slave & Silica Victim                    
+@zecoxao - Former Lead Developer, Free man            
 
 further credits: theFlow for amphetamin, frangarcj for oClock
 
