@@ -1,4 +1,5 @@
 # TropHAX
+
 You must install the plugin (obviously), it is your choice whether to use the *TITLEID or *ALL, it should not load on system apps, if you experience otherwise, please report.
 
 After the plugin is installed, start up the desired game and hit Start+Select to enable the plugin.
@@ -8,15 +9,12 @@ The screen will go blue and load the plugin.
 It will then go through all your trophies.
 
 # Credits
-TropHax by [SiicaServer](https://discord.gg/j4eGHhF)
+TropHax by [SilicaServer](https://discord.gg/j4eGHhF)
 
 @SilicaAndPina - Lead Project Manager and Recon
-
 @Pocxki - Idea/Trophy merchant/Lead Tester
-
-@dots_tb - @dots_tb - Lead Developer, Slave & Silica Victim
-
-@notzecoxao - Former Lead Developer, Free man
+@dots-tb - Lead Developer, Slave & Silica Victim
+@zecoxao - Former Lead Developer, Free man
 
 further credits: theFlow for amphetamin, frangarcj for oClock
 
@@ -27,3 +25,6 @@ Testing Team: Levi
 TropHAX should work on about 90% of games.
 
 If you have any problems post them in the issues section 
+
+Trophys will sync online. so there is a potential ban risk
+use a different account, or simply use offline if you care.
