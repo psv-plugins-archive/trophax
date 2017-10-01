@@ -8,7 +8,7 @@ The screen will go blue and load the plugin.
 It will then go through all your trophies.
 
 # Credits
-TropHax by SilicaServer (https://discord.gg/j4eGHhF)
+TropHax by [SiicaServer](https://discord.gg/j4eGHhF)
 
 @SilicaAndPina - Lead Project Manager and Recon
 @Pocxki - Idea/Trophy merchant/Lead Tester
