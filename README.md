@@ -12,7 +12,8 @@ TropHax by [SilicaServer](https://discord.gg/j4eGHhF)
 @SilicaAndPina - Lead Project Manager and Recon                    
 @Pocxki - Idea/Trophy merchant/Lead Tester              
 @dots-tb - Lead Developer, Slave & Silica Victim                    
-@zecoxao - Former Lead Developer, Free man            
+@zecoxao - Former Lead Developer, Free man            
+@Nkekev - 0,2 Lead Developer
 
 further credits: theFlow for amphetamin, frangarcj for oClock
 
