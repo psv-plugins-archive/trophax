@@ -5,6 +5,7 @@
 /// @Pocxki - Idea/Trophy merchant/Lead Tester
 /// @dots_tb - Lead Developer, Slave & Silica Victim
 /// @notzecoxao - Former Lead Developer, Free man
+/// @Nkekev - Lead Update Developer
 
 ///Extreme Testing Team: JustMulti, wosley
 ///Testing Team: Levi
@@ -16,35 +17,58 @@
 #include <taihen.h>
 #include "blit.h"
 
+#define SCE_NP_TROPHY_NAME_MAX_SIZE 128
+#define SCE_NP_TROPHY_DESCR_MAX_SIZE 1024
+
 typedef int32_t SceNpTrophyHandle;
 typedef int32_t SceNpTrophyContext;
 typedef int32_t SceNpTrophyId;
 
-
-char display[128];
-int hook[10] = {[0 ... 9] = -1};
-
 int sceNpTrophyUnlockTrophy(SceNpTrophyContext context, SceNpTrophyHandle handle, SceNpTrophyId trophyId, SceNpTrophyId *platinumId);
 int sceNpTrophyCreateHandle(SceNpTrophyHandle *handle);
+
 SceNpTrophyContext *context = NULL;
 SceNpTrophyHandle handle = -1;
 
-int isInit = 0, isCxt = 0, isExt = 0, isExtFound = 0, isCredits = 0,  isHidden = 1;
 
+char display[128];
+int hook[10] = {[0 ... 9] = -1};
+int isInit = 0, isCxt = 0, isExt = 0, isExtFound = 0, isCredits = 0,  isHidden = 1, menu = 0, trophyIdChoice = 0;
 char mod_name_buf[28];
 char *mod_name = TAI_MAIN_MODULE;
 
 void drawScreen() {
-	blit_set_color(0x00FFFFFF, 0x00FF0000);
-	if(!isHidden) blit_string(20, 40,display);
-	if(isCxt&&isInit&&isCredits) {
-		blit_string(20, 60,"@SilicaAndPina - Lead Project Manager and Recon");
-		blit_string(20, 80,"@Pocxki - Idea/Trophy merchant/Lead Tester");
-		blit_string(20, 100,"@dots_tb - Lead Developer, Slave & Silica Victim");
-		blit_string(20, 120,"@notzecoxao - Former Lead Developer, Free man");
-		blit_string(20, 140,"Extreme Testing Team: Multi-MoDz, wosley");
-		blit_string(20, 160,"Testing Team: Levi");
-	}
+        blit_set_color(0x00FFFFFF, 0x00FF0000);
+        if(!isHidden && (!isCredits)){
+                blit_string(20, 40, "SilicaServer presents: Trophax 0.2");
+                blit_string(20, 60, display);
+                blit_string(20, 80, "Press L+R to unlock all or L+START to unlock one");
+        }
+        switch(menu){
+        case 1:
+                /*blit_clear(0x00FF0000);
+                  blit_string(20, 80, "Unlocking all the trophies");*/
+                blit_string(20, 260, display);
+                break;
+        case 2:
+                if(!isCredits){
+                        blit_string(20, 80, "Select trophy by ID you want to unlock with L+UP / L+DOWN");
+                        blit_stringf(20, 100, "Trophy ID: %d", trophyIdChoice);
+                        blit_string(20, 120, "Press L+CIRCLE to confirm and unlock");
+                }
+                blit_string(20, 260, display);
+                break;
+        }
+        if(isCxt&&isInit&&isCredits) {
+                blit_string(20, 60, "Trophax 0.2 by Silica Server, please wait...");
+                blit_string(20, 80,"@SilicaAndPina - Lead Project Manager and Recon");
+                blit_string(20, 100,"@Pocxki - Idea/Trophy merchant/Lead Tester");
+                blit_string(20, 120,"@dots_tb - Lead Developer, Slave & Silica Victim");
+                blit_string(20, 140,"@notzecoxao - Former Lead Developer, Free man");
+                blit_string(20, 160,"@Nkekev - Update Lead Developer");
+                blit_string(20, 180,"Extreme Testing Team: Multi-MoDz, wosley");
+                blit_string(20, 200,"Testing Team: Levi");
+        }
 }
 
 
@@ -60,8 +84,7 @@ SceUID sceNpTrophyCreateContext_patched(SceNpTrophyContext *c, uint32_t commId, 
 	} else {
 		isCxt = 1;
 	}	
-	if(isInit&&isCxt)
-		sceClibSnprintf(display,128, "SilicaServer presents: TropHax. Hit L+R trigger to unlock.");
+
 	return ret;
 }
 static tai_hook_ref_t trophy_init_hook;
@@ -74,8 +97,7 @@ SceUID sceNpTrophyInit_patched(uint32_t r1, uint32_t r2, uint32_t r3, uint64_t r
 	} else {
 		isInit = 1;
 	}
-	if(isInit&&isCxt)
-		sceClibSnprintf(display,128, "SilicaServer presents: TropHax. Hit L+R trigger to unlock.");
+
 	return ret;
 }
 
@@ -86,7 +108,6 @@ int sceDisplaySetFrameBuf_patched(const SceDisplayFrameBuf *pParam, int sync) {
 	blit_set_frame_buf(pParam);
 	drawScreen();
 	return TAI_CONTINUE(int, fame_hook, pParam, sync);
-
 }
 
 
@@ -135,11 +156,10 @@ void unhookAll() {
 void UnlockAllTrophies() {
 	sceClibPrintf("\nhandle ret %x",sceNpTrophyCreateHandle(&handle));
 	int ret = -1;
-	
-	SceNpTrophyId trophyId = 0;
-	isCredits = 1;
-	do {
-		
+    SceNpTrophyId trophyId = 0;
+    
+    isCredits = 1;
+	do {		
 		blit_setup();
 		blit_clear(0x00FF0000);
 		blit_set_color(0x00FF0000, 0x00FFFFFF);
@@ -147,8 +167,8 @@ void UnlockAllTrophies() {
 		drawScreen();
 		SceNpTrophyId plat;
 		ret = sceNpTrophyUnlockTrophy(*context, handle, trophyId++, &plat);
-		sceClibSnprintf(display,128, "Unlocked Trophy %d, ret: %x", trophyId, ret);
-		sceClibPrintf("\nUnlocked Trophy %lx, ret: %x", trophyId, ret);
+		sceClibSnprintf(display, 128, "Unlocked Trophy %d (ret: %x)", trophyId, ret);
+		sceClibPrintf("\nUnlocked Trophy %lx (ret: %x)", trophyId, ret);
 		
 	} while(trophyId == 1 || ret >= 0 || ret == 0x8055160f );
 	if(ret == 0x8055160e){
@@ -158,11 +178,46 @@ void UnlockAllTrophies() {
 		isCxt = 0;
 		isInit = 0;
 	}
-
-	//sceClibPrintf("\nhandle unret %x", sceNpTrophyDestroyHandle(&handle));
-
-	
+	//sceClibPrintf("\nhandle unret %x", sceNpTrophyDestroyHandle(&handle));	
 }
+
+void UnlockSpecificTrophy(int TrophyId){
+        sceClibPrintf("\nhandle ret %x", sceNpTrophyCreateHandle(&handle));
+        SceNpTrophyId speTrophyId = TrophyId;
+        SceNpTrophyId plat;
+        int ret;
+
+        isCredits = 1;
+        blit_clear(0x00FF0000);
+        drawScreen();
+        
+        ret = sceNpTrophyUnlockTrophy(*context, handle, speTrophyId, &plat); 
+        switch(ret){
+        case 0x8055160e:
+                sceClibSnprintf(display, 128, "Invalid Trophy Id %d (ret:%x)", TrophyId, ret);
+                sceClibPrintf("\nInvalid Trophy Id %d (ret:%x)", TrophyId, ret);
+                break;
+        case 0x8055160f:
+                sceClibSnprintf(display, 128, "Trophy %d already unlocked (ret:%x)", TrophyId, ret);
+                sceClibPrintf("\nTrophy %d already unlocked (ret:%x)", TrophyId, ret);
+                break;
+        case 0x80551610:
+                sceClibSnprintf(display, 128, "Cant unlock Platinum trophy %d (ret:%x)", TrophyId, ret);
+                sceClibPrintf("\nCant unlock Platinum trophy %d (ret:%x)", TrophyId, ret);
+                break;
+        default:
+                sceClibSnprintf(display, 128, "Unlocked Trophy %d (ret:%x)", TrophyId, ret);
+                sceClibPrintf("\nUnlocked Trophy %d (ret:%x)", TrophyId, ret);
+                break;
+  }
+        drawScreen();
+        sceKernelDelayThread(5 * 1000 * 1000);
+        menu = 0;
+        isCredits = 0;
+        blit_clear(0x00FF0000);
+        sceClibSnprintf(display, 128, "");
+}
+
 //nid searcher, maybe someone could use it for sceioopen;)
 static tai_hook_ref_t start_mod_child_hook;
 
@@ -274,28 +329,45 @@ SceUID sceKernelLoadStartModule_parent_patched(char *path, SceSize args, void *a
 	sceClibPrintf("loaded");
 	return ret;
 }
+
 int checkButtons(int port, tai_hook_ref_t ref_hook, SceCtrlData *ctrl, int count) {
 	SceCtrlData pad;
-	memset(&pad, 0, sizeof(SceCtrlData));
-	sceCtrlPeekBufferPositive2(0, &pad, 1);
-	if(ref_hook!=0&&!isHidden&&isCxt&&isInit&&
-	((pad.buttons & (SCE_CTRL_R1|SCE_CTRL_L1)) == (SCE_CTRL_R1|SCE_CTRL_L1))) {
-		blit_setup();
-		blit_clear(0x00FF0000);
-		blit_set_color(0x00FF0000, 0x00FFFFFF);
-		blit_string_ctr(20,".-. BLUE SCREEN OF SILICA .-.");
-		sceClibSnprintf(display,128,"TropHax by SilicaServer, Please Wait...");
-		drawScreen();
-		sceClibPrintf("\nUnlocking trophies");
-		UnlockAllTrophies();
-	} else if (isHidden&&((pad.buttons & (SCE_CTRL_START|SCE_CTRL_SELECT)) == (SCE_CTRL_START|SCE_CTRL_SELECT))) {
-		isHidden = 0;
-	}
-		
-    
 
-  return TAI_CONTINUE(int, ref_hook, port, ctrl, count);
+    memset(&pad, 0, sizeof(SceCtrlData));
+    sceCtrlPeekBufferPositive2(0, &pad, 1);
+    
+	if(ref_hook!=0&&!isHidden&&isCxt&&isInit){
+            if((pad.buttons & (SCE_CTRL_R1|SCE_CTRL_L1)) == (SCE_CTRL_R1|SCE_CTRL_L1)) {
+                    menu = 1;
+                    blit_setup();
+                    blit_clear(0x00FF0000);
+                    blit_set_color(0x00FF0000, 0x00FFFFFF);
+                    blit_string_ctr(20,".-. BLUE SCREEN OF SILICA .-.");
+                    drawScreen();
+                    sceClibPrintf("\nUnlocking trophies");
+                    UnlockAllTrophies();
+            }
+            else if ((pad.buttons & (SCE_CTRL_START|SCE_CTRL_L1)) == (SCE_CTRL_START|SCE_CTRL_L1)){
+                    menu = 2;
+            }
+            else if(menu == 2){
+                    if(((pad.buttons & (SCE_CTRL_UP|SCE_CTRL_L1)) == (SCE_CTRL_UP|SCE_CTRL_L1)) && (trophyIdChoice < 256)){
+							trophyIdChoice++;
+                            sceKernelDelayThread(200000);
+					} else if(((pad.buttons & (SCE_CTRL_DOWN|SCE_CTRL_L1)) == (SCE_CTRL_DOWN|SCE_CTRL_L1)) && (trophyIdChoice > 0)){
+							trophyIdChoice--;
+                            sceKernelDelayThread(200000);
+					} else if((pad.buttons & (SCE_CTRL_CIRCLE|SCE_CTRL_L1)) == (SCE_CTRL_CIRCLE|SCE_CTRL_L1)){
+                            sceClibPrintf("\nUnlocking specific trophy");
+                            UnlockSpecificTrophy(trophyIdChoice);
+                    }
+            }
+    } else if (isHidden&&((pad.buttons & (SCE_CTRL_START|SCE_CTRL_SELECT)) == (SCE_CTRL_START|SCE_CTRL_SELECT)))
+            isHidden = 0;
+    
+    return TAI_CONTINUE(int, ref_hook, port, ctrl, count);
 }
+    
 
 static tai_hook_ref_t ref_hook1;
 static int keys_patched1(int port, SceCtrlData *ctrl, int count) {
@@ -318,7 +390,6 @@ static int keys_patched4(int port, SceCtrlData *ctrl, int count) {
 }   
 void _start() __attribute__ ((weak, alias ("module_start")));
 int module_start(SceSize argc, const void *args) {
-	sceClibSnprintf(display,128,"TropHax by SilicaServer, Please Wait...");
 	hook[6] = taiHookFunctionImport(&ref_hook1, 
 									  TAI_MAIN_MODULE,
 									  TAI_ANY_LIBRARY,
