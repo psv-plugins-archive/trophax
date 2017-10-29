@@ -2,11 +2,9 @@
 
 You must install the plugin (obviously), it is your choice whether to use the *TITLEID or *ALL, it should not load on system apps, if you experience otherwise, please report.
 
-After the plugin is installed, start up the desired game and hit Start+Select to enable the plugin.
-It will tell you to wait, when it prompts you to hit L+R you may do so once it reaches the main menu of the game or wait longer to increase compatibility.
-
-The screen will go blue and load the plugin.
-It will then go through all your trophies.
+After the plugin is installed, start up the desired game and once at the main menu hit Start+Select to enable the plugin.
+Now you can use L+R to unlock all or L+START to unlock a specific trophy, use L+UP and L+DOWN to make your selection
+then L+CIRCLE to unlock
 
 # Credits
 TropHax by [SilicaServer](https://discord.gg/j4eGHhF)
