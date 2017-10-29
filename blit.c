@@ -104,12 +104,18 @@ int blit_string(int sx,int sy,const char *msg)
 //Kprintf("MODE %d WIDTH %d\n",pixelformat,bufferwidth);
 	if( (bufferwidth==0) || (pixelformat!=0)) return -1;
 
+    int buff = 0;
 	for(x=0;msg[x] && x<(pwidth/16);x++)
 	{
+            if(msg[x]=='\n'){
+                    sy += 20;
+                    buff = 0;
+                    x++;
+            }
 		code = msg[x] & 0x7f; // 7bit ANK
 		for(y=0;y<8;y++)
 		{
-			offset = (sy+(y*2))*bufferwidth + sx+x*16;
+			offset = (sy+(y*2))*bufferwidth + sx+buff*16;
 			font = y>=7 ? 0x00 : msx[ code*8 + y ];
 			for(p=0;p<8;p++)
 			{
@@ -147,6 +153,7 @@ int blit_string(int sx,int sy,const char *msg)
 				offset+=2;
 			}
 		}
+        buff++;
 	}
 	return x;
 }
