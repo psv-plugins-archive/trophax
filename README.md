@@ -31,4 +31,4 @@ use a different account, or simply use offline if you care.
 
 # SDK Docs
 Some docs from the SONY SDK where used to create TropHAX:
-https://drive.google.com/open?id=1cbNc6Sk3F0zNiqmHfZEUSO78RgL9EOjL
+https://stack.gigafyde.nl/s/AoxCjPSZLMIOpIE
