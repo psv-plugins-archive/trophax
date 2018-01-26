@@ -6,6 +6,10 @@ After the plugin is installed, start up the desired game and once at the main me
 Now you can use L+R to unlock all or L+START to unlock a specific trophy, use L+UP and L+DOWN to make your selection
 then L+CIRCLE to unlock
 
+# Usage
+You are absoutley under no circumstance allowed to use this for commercial gain in a "Trophy Service"
+Where you sell trophys to users. its ok to do it in a FREE Trophy Service. but not in a paid one.
+
 # Credits
 TropHax by [SilicaServer](https://discord.gg/j4eGHhF)
 
