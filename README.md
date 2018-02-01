@@ -31,7 +31,7 @@ Testing Team: Levi
 TropHAX should work on about 90% of games.
 
 If you have any problems post them in the issues section 
-Please also post the ur0:trophy/00/NPWR folders. as i can use these to make a patch
+Please also post the ur0:trophy/00/NPWR and ux0:app/titleid/sce_sys/trophy folders. as i can use these to make a patch
 
 # Compadibility Patches
 
