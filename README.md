@@ -6,6 +6,9 @@ After the plugin is installed, start up the desired game and once at the main me
 Now you can use L+R to unlock all or L+START to unlock a specific trophy, use L+UP and L+DOWN to make your selection
 then L+CIRCLE to unlock
 
+Trophys will sync online. so there is a potential ban risk
+use a different account, or simply use offline if you care.
+
 # Usage
 You are absoutley under no circumstance allowed to use this for commercial gain in a "Trophy Service"
 Where you sell trophys to users. its ok to do it in a FREE Trophy Service. but not in a paid one.
@@ -28,10 +31,12 @@ Testing Team: Levi
 TropHAX should work on about 90% of games.
 
 If you have any problems post them in the issues section 
+Please also post the ur0:trophy/00/NPWR folders. as i can use these to make a patch
 
-Trophys will sync online. so there is a potential ban risk
-use a different account, or simply use offline if you care.
+# Compadibility Patches
 
+Here you can find patches for various games to make it so TropHAX works on incompadible games.
+SAO -HF- (Via Lufterausers) https://stack.gigafyde.nl/s/PoMlsDQQ1ySBFYF
 
 # SDK Docs
 Some docs from the SONY SDK where used to create TropHAX:
