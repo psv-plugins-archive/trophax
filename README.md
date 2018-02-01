@@ -35,7 +35,7 @@ Please also post the ur0:trophy/00/NPWR folders. as i can use these to make a pa
 
 # Compadibility Patches
 
-Here you can find patches for various games to make it so TropHAX works on incompadible games.
+Here you can find patches for various games to make it so TropHAX works on incompadible games.                       
 SAO -HF- (Via Lufterausers) https://stack.gigafyde.nl/s/PoMlsDQQ1ySBFYF
 
 # SDK Docs
