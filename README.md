@@ -35,9 +35,9 @@ Please also post the ur0:trophy/00/NPWR and ux0:app/titleid/sce_sys/trophy folde
 
 # Compadibility Patches
 
-Here you can find patches for various games to make it so TropHAX works on incompadible games.                       
-SAO -HF- (Via Lufterausers) https://stack.gigafyde.nl/s/PoMlsDQQ1ySBFYF
-WoFF (Via Lufterausers) https://stack.gigafyde.nl/s/zt48RjQecbwbnFY
+Here you can find patches for various games to make it so TropHAX works on incompadible games.                     
+SAO -HF- (Via Lufterausers) https://stack.gigafyde.nl/s/PoMlsDQQ1ySBFYF               
+WoFF (Via Lufterausers) https://stack.gigafyde.nl/s/zt48RjQecbwbnFY                         
 
 # SDK Docs
 Some docs from the SONY SDK where used to create TropHAX:
