@@ -41,6 +41,7 @@ WoFF (Via Lufterausers) https://stack.gigafyde.nl/s/zt48RjQecbwbnFY
 
 Game not on the list? you can create your own Compadbility Patches using TrophyPatcher:
 https://github.com/SilicaAndPina/trophyPatcher/releases
+Or just complain that it doesnt work on the issues page, and ill probably end up doing it for you.
 # SDK Docs
 Some docs from the SONY SDK where used to create TropHAX:
 https://stack.gigafyde.nl/s/AoxCjPSZLMIOpIE
