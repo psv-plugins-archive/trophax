@@ -39,6 +39,8 @@ Here you can find patches for various games to make it so TropHAX works on incom
 SAO -HF- (Via Lufterausers) https://stack.gigafyde.nl/s/PoMlsDQQ1ySBFYF               
 WoFF (Via Lufterausers) https://stack.gigafyde.nl/s/zt48RjQecbwbnFY                         
 
+Game not on the list? you can create your own Compadbility Patches using TrophyPatcher:
+https://github.com/SilicaAndPina/trophyPatcher/releases
 # SDK Docs
 Some docs from the SONY SDK where used to create TropHAX:
 https://stack.gigafyde.nl/s/AoxCjPSZLMIOpIE
