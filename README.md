@@ -36,18 +36,21 @@ Please also post the ur0:trophy/00/NPWR and ux0:app/titleid/sce_sys/trophy folde
 # Compadibility Patches
 
 Here you can find patches for various games to make it so TropHAX works on incompadible games.                     
-SAO -HF- EU (Via Lufterausers) https://stack.gigafyde.nl/s/PoMlsDQQ1ySBFYF               
-WoFF (Via Lufterausers) https://stack.gigafyde.nl/s/zt48RjQecbwbnFY                         
+SAO -HF- EU (Via Lufterausers) https://stack.gigafyde.nl/s/PoMlsDQQ1ySBFYF                                     
 SAO -HF- USA (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/4Gc8K3mshcD6wE9            
-SAO -HF- JPN (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/KvYZzQhC2qLZzRH                   
+SAO -HF- JPN (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/KvYZzQhC2qLZzRH     
+WoFF (Via Lufterausers) https://stack.gigafyde.nl/s/zt48RjQecbwbnFY   
 GOD EATER RAGE BUST (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/X2DDjmUVGQzppBW            
 GOD EATER RESSURECION (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/klDWLebbd6fJavM            
+GOD EATER 2 JPN (Via TrophyPathcer/RCR) https://stack.gigafyde.nl/s/juurZazQvH92XHq       
 SUMMON KNIGHT 6 JPN (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/4vFS85WpXso0Ki4            
 CALIGULA JPN (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/L13q3e4jlgktzqq            
 CORPSE PARTY USA (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/yjPQRw0Sf38rsDv              
 CORPSE PARTY EU (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/FBthPHqP8UepX7X           
-CORPSE PARTY JPN (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/lDIuwYz997aankS           
-GOD EATER 2 JPN (Via TrophyPathcer/RCR) https://stack.gigafyde.nl/s/juurZazQvH92XHq               
+CORPSE PARTY JPN (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/lDIuwYz997aankS      
+VELOCITY 2X (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/Y4J3IxxIQfJPInk
+WAKE UP CLUB (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/VWXd5IPt4jbPqH3
+        
 
 Game not on the list? you can create your own Compadbility Patches using TrophyPatcher:            
 https://github.com/SilicaAndPina/trophyPatcher/releases                      
