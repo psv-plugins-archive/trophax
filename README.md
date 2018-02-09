@@ -50,6 +50,7 @@ CORPSE PARTY EU (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/FBthPHqP8Uep
 CORPSE PARTY JPN (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/lDIuwYz997aankS      
 VELOCITY 2X (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/Y4J3IxxIQfJPInk            
 WAKE UP CLUB (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/VWXd5IPt4jbPqH3              
+DEEMO THE LAST RECITAL (TrophyPatcher/RCR) https://stack.gigafyde.nl/s/zyKNy9Ei5gnIXQ5                   
         
 
 Game not on the list? you can create your own Compadbility Patches using TrophyPatcher:            
