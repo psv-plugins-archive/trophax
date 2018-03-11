@@ -33,6 +33,9 @@ TropHAX should work on about 90% of games.
 If you have any problems post them in the issues section 
 Please also post the ur0:trophy/00/NPWR and ux0:app/titleid/sce_sys/trophy folders. as i can use these to make a patch
 
+Also, TropHAX was confirmed working on 3.65 Henkaku.              
+https://twitter.com/MarvinGdt/status/972896623012532224            
+
 # Compadibility Patches
 
 Here you can find patches for various games to make it so TropHAX works on incompadible games.                     
@@ -51,6 +54,8 @@ CORPSE PARTY JPN (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/lDIuwYz997a
 VELOCITY 2X (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/Y4J3IxxIQfJPInk            
 WAKE UP CLUB (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/VWXd5IPt4jbPqH3              
 DEEMO THE LAST RECITAL (TrophyPatcher/RCR) https://stack.gigafyde.nl/s/zyKNy9Ei5gnIXQ5                   
+ASSULT GUNNERS (Via TrophyPather/RCR) https://stack.gigafyde.nl/s/Bxj5pC3kiyZMZ6o                   
+NO HEROES ALLOWED (Via TrophyPather/RCR) https://stack.gigafyde.nl/s/2VCHmgWXqF5r7nL
         
 
 Game not on the list? you can create your own Compadbility Patches using TrophyPatcher:            
