@@ -54,8 +54,9 @@ CORPSE PARTY JPN (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/lDIuwYz997a
 VELOCITY 2X (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/Y4J3IxxIQfJPInk            
 WAKE UP CLUB (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/VWXd5IPt4jbPqH3              
 DEEMO THE LAST RECITAL (TrophyPatcher/RCR) https://stack.gigafyde.nl/s/zyKNy9Ei5gnIXQ5                   
-ASSULT GUNNERS (Via TrophyPather/RCR) https://stack.gigafyde.nl/s/Bxj5pC3kiyZMZ6o                   
-NO HEROES ALLOWED (Via TrophyPather/RCR) https://stack.gigafyde.nl/s/2VCHmgWXqF5r7nL
+ASSULT GUNNERS (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/Bxj5pC3kiyZMZ6o                   
+NO HEROES ALLOWED (Via TrophyPatcher/RCR) https://stack.gigafyde.nl/s/2VCHmgWXqF5r7nL
+SAO -HR- (BETA) JPN (Via TrophyPatcher/RCR)
         
 
 Game not on the list? you can create your own Compadbility Patches using TrophyPatcher:            
