@@ -1,9 +1,10 @@
 # Releases:
 
-## TropHAX 2.0
+# TropHAX 2.0
+Added the option to select TrophyId to be unlocked.
 https://bitbucket.org/SilicaAndPina/trophax/downloads/trophax2.0.suprx
 
-## TropHAX 1.0
+# TropHAX 1.0
 https://bitbucket.org/SilicaAndPina/trophax/downloads/trophax1.0.suprx
 
 # Readme
