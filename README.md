@@ -55,6 +55,3 @@ Please also post the ur0:trophy/00/NPWR and ux0:app/titleid/sce_sys/trophy folde
 Also, TropHAX was confirmed working on 3.65 Henkaku.              
 https://twitter.com/MarvinGdt/status/972896623012532224            
                  
-# SDK Docs
-Some docs from the SONY SDK where used to create TropHAX:
-https://stack.gigafyde.nl/s/AoxCjPSZLMIOpIE
