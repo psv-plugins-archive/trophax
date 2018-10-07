@@ -13,13 +13,13 @@ https://bitbucket.org/SilicaAndPina/trophax/downloads/trophax1.0.suprx
 # Installation
 1. Put trophax.suprx into  ux0:tai (or ur0:tai if u prefer)
 2. Edit the config.txt file in that same 'tai' folder
-3. At the bottom of config.txt put *ALL to use it on all games (or u can use a games titleid specifically)
+3. At the bottom of config.txt put \*ALL to use it on all games (or u can use a games titleid specifically)
 4. Underneath that put in ux0:tai/trophax2.0.suprx (or ur0:tai/trophax2.0.suprx if you use sd2vita/just like plugins on ur0)
 5. Reload your henkaku configuration file from HENKAKU SETTINGS
 
 # Usage 
 
-You must install the plugin (obviously), it is your choice whether to use the *TITLEID or *ALL, it should not load on system apps, if you experience otherwise, please report.
+You must install the plugin (obviously), it is your choice whether to use the \*TITLEID or \*ALL, it should not load on system apps, if you experience otherwise, please report.
 
 After the plugin is installed, start up the desired game and once at the main menu hit Start+Select to enable the plugin.
 Now you can use L+R to unlock all or L+START to unlock a specific trophy, use L+UP and L+DOWN to make your selection
@@ -29,9 +29,7 @@ Trophys will sync online. so there is a potential ban risk
 use a different account, or simply use offline if you care.
 
 # License
-Licensed Under GPL- but:
-You are absoutley under no circumstance allowed to use this for commercial gain in a "Trophy Service"
-Where you sell trophys to users. its ok to do it in a FREE Trophy Service. but not in a paid one.
+Licensed Under GPLv3
 
 # Credits
 TropHax by [SilicaServer](https://discord.gg/j4eGHhF)
