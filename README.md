@@ -14,7 +14,7 @@ https://bitbucket.org/SilicaAndPina/trophax/downloads/trophax1.0.suprx
 1. Put trophax.suprx into  ux0:tai (or ur0:tai if u prefer)
 2. Edit the config.txt file in that same 'tai' folder
 3. At the bottom of config.txt put *ALL to use it on all games (or u can use a games titleid specifically)
-4. Underneath that put in ux0:tai/trophax.suprx (or ur0:tai/trophax.suprx depending on what ur using)
+4. Underneath that put in ux0:tai/trophax2.0.suprx (or ur0:tai/trophax2.0.suprx if you use sd2vita/just like plugins on ur0)
 5. Reload your henkaku configuration file from HENKAKU SETTINGS
 
 # Usage 
