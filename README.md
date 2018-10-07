@@ -53,6 +53,6 @@ TropHAX should work on about 90% of games.
 If you have any problems post them in the issues section 
 Please also post the ur0:trophy/00/NPWR and ux0:app/titleid/sce_sys/trophy folders. as i can use these to make a patch
 
-Also, TropHAX was confirmed working on 3.65 Henkaku.              
-https://twitter.com/MarvinGdt/status/972896623012532224            
+Will this work on 3.61/3/5/7/8/whatever:
+- YES, USERLAND NIDS NEVER CHANGE!
                  
